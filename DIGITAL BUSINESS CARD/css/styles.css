@@ -1,0 +1,96 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  background-image: url('../img/background.jpg'); /* Fix the path to the background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #495057;
+}
+
+#business-card {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#logo-container {
+  width: 100%; /* Take up full width */
+  overflow: hidden;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#profile-photo-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; /* Rounded shape */
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  margin-top: -75px; /* Half of the height to overlap with company logo */
+  margin-bottom: 20px; /* Adjusted margin to create space between name and job title */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+#profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Rounded shape */
+}
+
+h1 {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 5px; /* Adjusted margin to create space between name and job title */
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #343a40;
+  margin: 10px 0; /* Create space between job title and section separator */
+}
+
+.container {
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
+}
+
+.container p {
+  margin: 10px 0;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.icon img {
+  width: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Remove icon style for company name */
+#company-details p:first-child .icon {
+  display: none;
+}
